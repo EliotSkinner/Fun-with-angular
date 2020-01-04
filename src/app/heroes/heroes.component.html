@@ -1,0 +1,26 @@
+<h2>There is only one who can save us: {{ hero.name | uppercase }}</h2>
+<div>
+    <label>
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+</div>
+<div class="multibeast_section">
+    <div class="multibeast_title">
+        <h2>Meet the Multibeast:</h2>
+    </div>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+            <span class="badge">
+                <div class="multibeast_thumbnail" >
+                        <img src={{hero.url}} />
+                </div>
+            </span>
+            <span class="details">
+                <div class="multibeast_details">
+                    <h2>{{ hero.name }}</h2>
+                    <app-hero-detail class="app-hero-detail" [hero]="selectedHero"></app-hero-detail>
+                </div>
+            </span>
+        </li>
+    </ul>
+</div>

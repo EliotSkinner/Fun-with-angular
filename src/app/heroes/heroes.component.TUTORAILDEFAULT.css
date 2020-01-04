@@ -1,0 +1,102 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding-bottom: 25px;
+
+  background-color: #0a529e;
+}
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: 1em;
+  border-radius: 4px;
+  height: 7.5em;
+  display: flex;
+}
+.heroes li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.heroes li.selected {
+  background-color: #91eefb;
+  height: fit-content;
+}
+.heroes li.selected:hover {
+  background-color: rgb(159, 178, 185);
+  color: white;
+}
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  background-color:#162331;
+  margin-right: 1.5em;
+  border-radius: 4px 0 0 4px;
+  height: 100px;
+  padding: 10px;
+}
+
+.multibeast_details h2 {
+  color: #019a37;
+  position: relative;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.multibeast_section
+{
+  background-color: #0a529e;
+}
+
+.multibeast_thumbnail
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.multibeast_title
+{
+  background-color: #0a529e;
+}
+
+.multibeast_title h2
+{
+  padding: 35px 35px 15px 35px;
+  color: #CFD8DC;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 38px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.app-hero-detail
+{
+  visibility: hidden;
+}
+
+.selected .app-hero-detail
+{
+  visibility: visible;
+}
